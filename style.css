@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,200;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Hanken+Grotesk:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;900&family=Work+Sans:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap'); 
+
+:root {
+    --font-family: 'Outfit', sans-serif;
+    --Font: 15px;
+    --White: hsl(0, 0%, 100%);
+    --Light : hsl(212, 45%, 89%);
+    --Grayish : hsl(220, 15%, 55%);
+    --Dark: hsl(218, 44%, 22%);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+body {
+    background-color: var(--Light);
+    font-size: var(--Font);
+    font-family: var(--font-family);
+}
+.container{
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    position: absolute;
+    right: 50%;
+    transform: translate(50% , 50%);
+    border-radius: 18px;
+}
+@media (max-width:425px) {
+    .container {
+        transform: translate(50% , 35%);
+
+    }
+}
+@media (max-width:375px) {
+    .container {
+        width: 250px;
+        transform: translate(50% , 100%);
+
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        transform: translate(50% ,50%);
+        border-radius: 16px;
+
+    }
+}
+.container .card {
+    width: 300px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #c8bbbb00;
+}
+.container .card img {
+    max-width: 100%;
+    border-radius: 4%;
+    
+}
+.container h2 {
+    padding: 14px 20px 15px 0px;
+    width: 108%;
+    text-align: center;
+    font-size: 21px;
+}
+.container P {
+    padding: 0px 0;
+    font-size: 16px;
+    color: var(--Grayish);
+}
